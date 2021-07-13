@@ -12,5 +12,5 @@ public class Transacciones {
             "DROPE TABLE IF EXISTS imagenes";
 
     /* Base de Datos */
-    public static final String NameDataBase = "DBCurso";
+    public static final String NameDataBase = "DBFirma";
 }
