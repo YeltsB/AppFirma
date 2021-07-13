@@ -33,6 +33,7 @@ public class activity_firma extends AppCompatActivity {
         db = new SQLiteConexion(getApplicationContext(), Transacciones.NameDataBase, null, 1);
         Button btnSalvar = (Button) findViewById(R.id.btn_salvar);
         Button btnClean = (Button) findViewById(R.id.btn_limpiar);
+        Button btnLista = (Button) findViewById(R.id.btn_lista);
         EditText descripcion = (EditText) findViewById(R.id.editTextTextPersonName2);
 
 
@@ -40,10 +41,19 @@ public class activity_firma extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 getBytes(mSig.getBitmap());
-                db.insert(byteArray, "Hey");
+                db.insert(byteArray, descripcion.getText().toString());
                 Toast.makeText(getApplicationContext(), "Guardado en la Base de Datos", Toast.LENGTH_LONG).show();
                 byteArray = new byte[0];
                 descripcion.setText("");
+                mSig.ClearCanvas();
+            }
+        });
+
+        btnLista.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), listaImagenes.class);
+                startActivity(intent);
             }
         });
 

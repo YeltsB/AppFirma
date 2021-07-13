@@ -8,13 +8,13 @@
 
     <LinearLayout
         android:id="@+id/signLayout"
-        android:layout_width="408dp"
+        android:layout_width="match_parent"
         android:layout_height="281dp"
         android:orientation="horizontal"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="5dp">
-
+        tools:layout_editor_absoluteY="0dp"
+        android:background="@drawable/customborder">
     </LinearLayout>
 
 
