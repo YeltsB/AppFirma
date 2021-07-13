@@ -5,11 +5,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity_firma">
+
     <LinearLayout
         android:id="@+id/signLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="408dp"
+        android:layout_height="281dp"
+        android:orientation="horizontal"
         tools:ignore="MissingConstraints"
-        android:orientation="horizontal">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="5dp">
+
     </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="321dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Descripcion(Opcional)"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signLayout"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <Button
+        android:id="@+id/btn_salvar"
+        android:layout_width="315dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="7dp"
+        android:text="Salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <Button
+        android:id="@+id/btn_limpiar"
+        android:layout_width="311dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:text="Limpiar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_salvar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_lista"
+        android:layout_width="313dp"
+        android:layout_height="49dp"
+        android:text="Lista"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_limpiar"
+        app:layout_constraintVertical_bias="0.022" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
